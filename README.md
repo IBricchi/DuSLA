@@ -1,4 +1,4 @@
-#Dual System Learning Algorithm (DuSLA)
+# Dual System Learning Algorithm (DuSLA)
 
 DuSLA is a learning algorithm designed to run on continuous input. Neural networks are designed to resemble the brain, for the most part, they miss a lot of the normal functions of the brain. The two main points DuSLA tries to change are:
 
@@ -13,7 +13,7 @@ On top of full connectivity, the brain also has two main systems, the conscious 
 
 The third aspect that DuSLA uses as inspiration is the way the brain learns. The brain is basically an amazing algorithm, it takes inputs and produces outputs. One of these inputs would be feel-good hormone receptors (not sure how else to put it really). Basically, we humans only really do things because it feels good to do it, and don't do things because things feel bad. This is obviously oversimplified but overall it describes it well enough for the purposes of this project. 
 
-##Structure
+## Structure
 
 Taking these ideas into account DuSLA has two main units:
 
@@ -38,7 +38,7 @@ This part of the algorithm is inspired by the autonomic system of the body. Alth
 
 All inputs would be used in this system, each type of input would, just like in the human body, each input type causes different effects on the brain, pain is bad, eating is good. Basically, based on the inputs the system creates a simple good or bad system, based on this, and the current state of the processing system the Automatic system would act as the training algorithm of sorts. If the system is receiving negative inputs it'll try to change the system to change the way information is processed. And if it's receiving positive feelings it'll train to produce the same results.
 
-##Information Processing
+## Information Processing
 
 Training algorithms normally use backpropagation to train systems, these need structured systems, something which clearly doesn't work in this program. As so I tried to come up with a new system to not only train the programme but also to process data. Normal systems use weights with which they take weighted averages to decide how information is processed. However instead of each neuron deciding how data is processed this system would instead have each neuron decide what other neurons to send data to. The way I propose for this to work would be what I'm calling thresholds. These would replace the weights, each neuron would have a threshold for every other neuron. 
 
@@ -57,13 +57,13 @@ Send to random nodes, would allow for neurons to randomly send values to nodes w
 
 Until a model is built I don't know if the problem would arise or not, or even if my solutions would even work.
 
-##Training
+## Training
 
 Training would be difficult, I don't actually know exactly how it would work, but in short, since the thresholds in a way could be used as probabilities, matrices with probabilities to be sent to other nodes would be easy to create. This matrix could be put through something similar to a Markov chain, however, these chains would not necessarily be the same as Markov chains however the concept of a Markov chain could allow for calculation of specific probabilities. Of inputs causing outputs, which in turn could be used to adjust the thresholds.
 
 The specifics of this would still have to be worked out, but I think that this could definitely be a starting point.
 
-##Uses
+## Uses
 
 Since just as in real life processing through the autonomic system is significantly faster than the conscious mind, so too will the processing of the automatic unit be faster than processing unit. For that reason just as in real life, the input of the system would have to be continuous, since training is based on inputs and outputs, if inputs change too quickly the autonomic unit would adjust thresholds of the processing unit based on faulty input-output links. This could be accounted for slightly but ultimately the best solution I could think is having continuous inputs.
 
